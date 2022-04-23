@@ -7,7 +7,6 @@
         <span @click="flightsShown = !flightsShown">{{ flights.length }}</span>
         flights from {{ flightsTimeRange }} .
       </p>
-      <p>flightsShown: {{ flightsShown }}</p>
       <div v-if="flightsShown">
         <p v-for="(flight, index) in flights" :key="index">
           {{ flight.airline.iata }} --- Departure at
